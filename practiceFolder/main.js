@@ -1,1 +1,1 @@
-console.log('helllo')
+console.log(typeof 2)
