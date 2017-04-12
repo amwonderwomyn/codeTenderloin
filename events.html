@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <h1 class="prize"> Click Me </h1>
+
+   <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous">
+   </script>
+
+   <script>
+   $('.prize').on('mouseover', function() {
+      alert('You won a prize!')
+   })
+
+
+   function main() {
+    var n = parseInt(readLine());
+    var build = '';
+    
+    for(var i = 0; i <= n; n++) {
+        var newString = ''
+        for(var j = 0; j <= n; j++){
+            if ( j < n) {
+                newString += ' ';
+            } else {
+                newString += '#'
+            }    
+        }
+        newString += '/n';
+        build += newString;
+        newString = '';
+    }
+    
+    return build;
+}
+
+main(4);
+   </script>
+   
+  </body>
+</html>
